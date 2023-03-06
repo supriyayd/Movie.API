@@ -10,7 +10,7 @@ namespace Movie.API.Implementation
         ImdbContext _context;
         public MovieRepository(ImdbContext imdbContext) { _context = imdbContext; }
 
-        public async Task<List<MovieViewModel>> GetMovies(string GenreName)
+        public async Task<List<MovieViewModel>?> GetMovies(string GenreName)
         {
 
             if (_context != null)

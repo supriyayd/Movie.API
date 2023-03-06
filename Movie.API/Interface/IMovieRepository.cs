@@ -4,6 +4,6 @@ namespace Movie.API.Interface
 {
     public interface IMovieRepository
     {
-        Task<List<MovieViewModel>> GetMovies(string GenreName);
+        Task<List<MovieViewModel>?> GetMovies(string GenreName);
     }
 }
